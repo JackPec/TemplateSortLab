@@ -1,0 +1,35 @@
+1. What things might cause your new sort template to fail to instantiate?
+
+Lot's of things, mainly bad syntax with the instantiation.
+
+
+2. Where should the overloaded swap form go? 
+(In the library or the main application?) 
+If in the library, should it be in the header
+ with the swap template or in the implementation file? 
+Does it matter to the compiler where it is? Why/Why not?
+
+I'm keeping in the main app, having templates in 
+header files is nasty business and requires alot of 
+time and effort to do, which I'm not gonna do 
+on a lab worth only 2 levels
+
+
+3. Did you need to make any changes to your original swap template?
+
+Yes, I made it so it takes in functions for the comparisons.
+
+
+4. Which comparisons did you write as plain functions?
+Function objects? Were any of them templated?
+Could/Should they have been? 
+(Hint: you should use at least one plain function 
+and one function object class to show you can do both.)
+
+None of the comparisons there plain functions, but I 
+could use them if I wanted to, all of them are 
+templated function objects passed through to the sort
+function
+
+
+
